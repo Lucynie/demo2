@@ -1,0 +1,26 @@
+<!--双十二超市做活动，满500即可享受八折优惠，模拟收银-->
+
+<html>
+<head>
+<title>模拟收银</title>
+<mate charset="utf-8"/>
+<script type="text/javascript"></script>
+</head>
+<body> 
+<script>
+var  price=prompt("请输入单价"),
+     count=prompt("请输入数量"),
+	 money=prompt("请输入收款金额");
+var total=price*count;
+  if(total>=500){
+    total=total*0.8;
+  }
+var change=money-total;
+  if(change>0){
+     document.write("应收："+total+",找零："+change);
+	 }else{
+	 document.write("应收："+total+",还差："+(-change));
+	 }
+</script>
+</body>
+</html>
